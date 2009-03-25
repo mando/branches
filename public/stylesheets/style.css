@@ -1,5 +1,39 @@
+body { 
+  background-color: #D5C6A5; 
+  color: #333; 
+  text-align:center;
+}
+
+#container {
+  width: 800px;
+  margin: 0px auto;
+  /*border: solid 1px red;*/
+}
+
+h1 {
+  font-size: 33px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+#login_box {
+  margin: auto;
+  text-align: left;
+  width: 500px;
+}
+
+.login_table {
+  margin-bottom: 10px;
+}
+
+#login_box input#user_session_password, input#user_session_login, input#email {
+  font-size: 1.3em;
+  height: 30px;
+  vertical-align: middle;
+  width: 355px;
+}
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', sans-serif;
   font-size:   13px;
   line-height: 18px;
 }
