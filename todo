@@ -1,4 +1,8 @@
+- People can only edit the groups they OWN (in other words, make group ownerable :).
+
 Models to add:
     * phone
     * IM
     * interests  
+
+
