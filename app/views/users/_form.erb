@@ -5,6 +5,10 @@
       <td><%= form.text_field :login %></td>
     </tr>
     <tr>
+      <td><%= form.label :email, "Email address" %></td>
+      <td><%= form.text_field :email %></td>
+    </tr>
+    <tr>
       <td><%= form.label :password, form.object.new_record? ? nil : "Change password" %></td>
       <td><%= form.password_field :password %></td>
     </tr>
