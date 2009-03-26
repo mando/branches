@@ -1,9 +1,16 @@
-<%= form.label :login %><br />
-<%= form.text_field :login %><br />
-<br />
-<%= form.label :password, form.object.new_record? ? nil : "Change password" %><br />
-<%= form.password_field :password %><br />
-<br />
-<%= form.label :password_confirmation %><br />
-<%= form.password_field :password_confirmation %><br />
-<br />
+<table class="login_table">
+  <tbody>
+    <tr>
+      <td><%= form.label :login, "Your Login" %></td>
+      <td><%= form.text_field :login %></td>
+    </tr>
+    <tr>
+      <td><%= form.label :password, form.object.new_record? ? nil : "Change password" %></td>
+      <td><%= form.password_field :password %></td>
+    </tr>
+    <tr>
+      <td><%= form.label :password_confirmation %></td>
+      <td><%= form.password_field :password_confirmation %></td>
+    </tr>
+  </tbody>
+</table>
