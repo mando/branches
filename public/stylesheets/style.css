@@ -6,6 +6,7 @@ body {
 
 #container {
   width: 800px;
+  padding-left: 40px;
   margin: 0px auto;
   /*border: solid 1px red;*/
 }
@@ -32,6 +33,12 @@ h1 {
   vertical-align: middle;
   width: 355px;
 }
+
+#user_info {
+  width: 500px;
+  text-align: left;
+}
+
 body, p, ol, ul, td {
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', sans-serif;
   font-size:   13px;

@@ -1,19 +1,35 @@
 <table class="login_table">
   <tbody>
     <tr>
-      <td><%= form.label :login, "Your Login" %></td>
+      <td style="text-align: right"><%= form.label :login, "Your Login" %></td>
       <td><%= form.text_field :login %></td>
     </tr>
     <tr>
-      <td><%= form.label :email, "Email address" %></td>
+      <td style="text-align: right"><%= form.label :email, "Email address" %></td>
       <td><%= form.text_field :email %></td>
     </tr>
     <tr>
-      <td><%= form.label :password, form.object.new_record? ? nil : "Change password" %></td>
+      <td style="text-align: right"><%= form.label :address, "Real address" %></td>
+      <td><%= form.text_field :address %></td>
+    </tr>
+    <tr>
+      <td style="text-align: right"><%= form.label :city, "City" %></td>
+      <td><%= form.text_field :city %></td>
+    </tr>
+    <tr>
+      <td style="text-align: right"><%= form.label :state, "State" %></td>
+      <td><%= form.text_field :state %></td>
+    </tr>
+    <tr>
+      <td style="text-align: right"><%= form.label :twitter, "Twitter" %></td>
+      <td><%= form.text_field :twitter %></td>
+    </tr>
+    <tr>
+      <td style="text-align: right"><%= form.label :password, form.object.new_record? ? nil : "Change password" %></td>
       <td><%= form.password_field :password %></td>
     </tr>
     <tr>
-      <td><%= form.label :password_confirmation %></td>
+      <td style="text-align: right"><%= form.label :password_confirmation %></td>
       <td><%= form.password_field :password_confirmation %></td>
     </tr>
   </tbody>
