@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090326151904) do
+ActiveRecord::Schema.define(:version => 20090326184717) do
 
   create_table "groups", :force => true do |t|
     t.string   "name"
@@ -37,6 +37,11 @@ ActiveRecord::Schema.define(:version => 20090326151904) do
     t.string   "current_login_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email",             :default => "", :null => false
+    t.string   "address",           :default => ""
+    t.string   "city",              :default => ""
+    t.string   "state",             :default => ""
+    t.string   "twitter",           :default => ""
   end
 
 end
