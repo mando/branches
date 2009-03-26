@@ -1,4 +1,7 @@
 class GroupsController < ApplicationController
+  before_filter :require_no_user, :only => [:index, :show]
+  before_filter :require_user, :only => [:new, :create, :edit, :update, :destroy]
+
   # GET /groups
   # GET /groups.xml
   def index
