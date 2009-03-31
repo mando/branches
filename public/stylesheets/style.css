@@ -27,9 +27,8 @@ h1 {
   margin-bottom: 10px;
 }
 
-#login_box input#user_session_password, input#user_session_login, input#email {
+#login_box input#user_session_password, input#user_session_login, input#user_session_email {
   font-size: 1.3em;
-  height: 30px;
   vertical-align: middle;
   width: 355px;
 }
