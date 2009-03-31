@@ -9,13 +9,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090331144327) do
+ActiveRecord::Schema.define(:version => 20090331211940) do
 
-  create_table "groups", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+# Could not dump table "groups" because of following StandardError
+#   Unknown type 'nullfalse' for column 'owner_id'
 
   create_table "memberships", :force => true do |t|
     t.integer  "user_id"

@@ -1,5 +1,4 @@
 class GroupsController < ApplicationController
-  before_filter :require_no_user, :only => [:index, :show]
   before_filter :require_user, :only => [:new, :create, :edit, :update, :destroy]
 
   # GET /groups
@@ -28,7 +27,6 @@ class GroupsController < ApplicationController
   # GET /groups/new.xml
   def new
     @group = Group.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @group }
@@ -44,7 +42,7 @@ class GroupsController < ApplicationController
   # POST /groups.xml
   def create
     @group = Group.new(params[:group])
-
+    @group.owner = current_user
     respond_to do |format|
       if @group.save
         flash[:notice] = 'Group was successfully created.'
